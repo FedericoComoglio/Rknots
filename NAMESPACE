@@ -1,0 +1,49 @@
+importFrom(graphics, plot)
+
+exportClasses( "Knot" )
+
+
+exportMethods(
+   getCoordinates, "setCoordinates<-",
+   getEnds, "setEnds<-",
+   print,
+   plot
+)
+
+export( 
+	#for 'Knot'
+	newKnot,
+	reduceStructure,
+   	computeInvariant,
+   	plot3D,
+   	makeExampleKnot,
+   	makeExampleProtein,
+   	closeAndProject,
+	
+	##for 'general'
+	AlexanderBriggs,
+	centroidClosure,
+	loadProtein,
+	findGaps,
+	HOMFLYpolynomial,
+	HOMFLY2mirror,
+	HOMFLY2Alexander,
+	HOMFLY2Jones,
+	intersectionMatrix,
+	linkingNumber,
+	mVA,
+	msr,
+	PCAProjection,
+	plotKnot3D,
+	plotDiagram,
+	rMatrix,
+	skeinIterator,
+	localize,
+	cyclicP,
+	auxiliaryAlexander,
+	get2D,
+	computeFactors,
+	escapePath,
+	vertexPresentation,
+	getKnotType
+)
