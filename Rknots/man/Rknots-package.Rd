@@ -16,8 +16,8 @@ either biological or synthetic knotted polymers, with a major focus on proteins.
 \tabular{ll}{
 Package: \tab Rknots\cr
 Type: \tab Package\cr
-Version: \tab 1.2.1\cr
-Date: \tab 2013-06-26\cr
+Version: \tab 1.2.2\cr
+Date: \tab 2014-12-29\cr
 License: \tab GPL-2\cr
 LazyLoad: \tab yes\cr
 }
