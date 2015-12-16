@@ -67,7 +67,8 @@ See references for additional details and credits.
 \examples{
 if(require(bio3d)) {
 ## Loading from the file system
-protein <- loadProtein(system.file("extdata/2k0a.pdb", package="Rknots"))
+fn <- system.file("extdata", "1AJC_chainA.pdb", package="Rknots")
+protein <- loadProtein(fn)
 
 ## Fetching the PDB
 protein<- loadProtein('2K0A')

@@ -43,7 +43,8 @@ PLoS Comput Biol 2(5): e45. doi:10.1371/journal.pcbi.0020045
 \examples{
 if(require(bio3d)) {
 ## Loading from the file system
-protein <- loadProtein(system.file("extdata/2k0a.pdb", package="Rknots"))
+fn <- system.file("extdata", "1AJC_chainA.pdb", package="Rknots")
+protein <- loadProtein(fn)
 protein <- newKnot(protein$A)
 protein.cp <- closeAndProject(protein)
 
