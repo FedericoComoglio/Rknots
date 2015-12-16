@@ -43,6 +43,7 @@ This is a low-level function.
 
 
 \examples{
+\dontrun{
 ## Import a PDB file from the web
 protein <- makeExampleProtein()
 closed <- centroidClosure(protein$A)
@@ -50,6 +51,7 @@ closed <- centroidClosure(protein$A)
 ##Plot the result
 plotKnot3D(closed, ends = c(), text = TRUE, showNC = TRUE, 
     radius = 0.01, lwd = 5)
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

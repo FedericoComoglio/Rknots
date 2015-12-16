@@ -10,18 +10,19 @@ makeExampleKnot <- function(k = TRUE) {
 	if(k) {
 		#Rolfsen.table <- NULL; rm(Rolfsen.table)
 		#data(Rolfsen.table, package='Rknots')
-		knot <- Rolfsen.table[[ sample(1 : length(Rolfsen.table), size = 1) ]]
+		knot <- Rknots::Rolfsen.table[[ sample(1 : length(Rknots::Rolfsen.table), size = 1) ]]
 		return( knot )
 	}
 	else {
 		#link.table <- NULL; rm(link.table)
 		#data(link.table, package='Rknots')
-		link <- link.table[[ sample(1 : length(link.table), size = 1) ]]
+		link <- Rknots::link.table[[ sample(1 : length(Rknots::link.table), size = 1) ]]
 		return( link )
 	}
 }
 
 makeExampleProtein <- function() {
-	protein <- loadProtein( system.file("extdata/2k0a.pdb", package="Rknots") )
+	fn <- system.file( "extdata", "2k0a.pdb", package = "Rknots")
+	protein <- loadProtein( fn )
 	return(protein)
 }
