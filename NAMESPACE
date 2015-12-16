@@ -1,4 +1,11 @@
-importFrom(graphics, plot)
+import(bio3d)
+import(rSymPy)
+import(rgl)
+
+importFrom(graphics, arrows, lines, plot)
+importFrom(methods, is, new, validObject)
+importFrom(utils, data, head, tail)
+ 
 
 exportClasses( "Knot" )
 

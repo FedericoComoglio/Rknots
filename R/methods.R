@@ -67,7 +67,6 @@ closeAndProject <- function(protein, ...) {
 }
 
 plot3D <- function(knot, ...) {
-	require(rgl)
 	plotKnot3D(knot@points3D, knot@ends, ...)
 }
 

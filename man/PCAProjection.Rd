@@ -36,14 +36,12 @@ This is a low-level function.
 
 \examples{
 \dontrun{
-if(require(bio3d)) {
-	protein <- loadProtein('3MDZ')
-  	par(mfrow = c(1,2))
-	plotDiagram(protein$A, ends = c(), lwd = 2.5, main = 'Original')
-	
-	protein.rot <- PCAProjection(protein$A)
-	plotDiagram(protein.rot, ends = c(), lwd = 2.5, main = 'Reduced')
-}
+protein <- loadProtein('3MDZ')
+par(mfrow = c(1,2))
+plotDiagram(protein$A, ends = c(), lwd = 2.5, main = 'Original')
+
+protein.rot <- PCAProjection(protein$A)
+plotDiagram(protein.rot, ends = c(), lwd = 2.5, main = 'Reduced')
 }
 }
 

@@ -6,7 +6,7 @@
 \description{Plot a knot or a link diagram, along with component orientation.}
 
 \usage{
-plotDiagram(points3D, ends, pca = FALSE, size = 1, colors = c(), return.vars = FALSE, ...) 
+plotDiagram(points3D, ends, pca = FALSE, size = 1, colors = c(), return.vars=FALSE, ...) 
 }
 
 \arguments{

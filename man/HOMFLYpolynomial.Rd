@@ -55,20 +55,21 @@ Federico Comoglio, federico.comoglio@bsse.ethz.ch
 }
 
 \examples{
-if(require(bio3d)) {
-	## Import a PDB file from the file system
-	protein <- makeExampleProtein()
+\dontrun{
+## Import a PDB file from the file system
+protein <- makeExampleProtein()
 
-	## Reduce to minimal structure
-	protein.reduced <- AlexanderBriggs(protein$A)
+## Reduce to minimal structure
+protein.reduced <- AlexanderBriggs(protein$A)
 
-	## Compute the skein tree
-	tree <- skeinIterator(protein.reduced$points3D, protein.reduced$ends)
+## Compute the skein tree
+tree <- skeinIterator(protein.reduced$points3D, protein.reduced$ends)
 	
-	## Compute the HOMFLY polynomial
-	HOMFLYpolynomial(tree$leaves, tree$tree, skein.sign = -1)
+## Compute the HOMFLY polynomial
+HOMFLYpolynomial(tree$leaves, tree$tree, skein.sign = -1)
 }
 }
+
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 \keyword{invariants}

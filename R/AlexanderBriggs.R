@@ -6,17 +6,6 @@
 # Author: Federico Comoglio @ D-BSSE, ETH Zurich
 ###############################################################################
 
-#cross2 <- function(v1, v2) {
-#	V <- rbind(v1, v2)
-#	A <- V[ ,2:3]
-#	B <- V[ ,c(1,3)]
-#	C <- V[ ,1:2]
-#	cx <- A[1, 1] * A[2, 2] - A[1, 2]* A[2, 1]	
-#	cy <- B[1, 1] * B[2, 2] - B[1, 2]* B[2, 1]
-#	cz <- C[1, 1] * C[2, 2] - C[1, 2]* C[2, 1]
-#	return(c(cx, -cy, cz))
-#}
-
 cross <- function(v1, v2) {
 	cx <- v1[2] * v2[3] - v2[2] * v1[3]
 	cy <- v1[1] * v2[3] - v1[3] * v2[1]
@@ -57,52 +46,6 @@ segmentSet <- function(comp, i, extends)
 	return(set)
 }
 	
-#move3DOLD <- function(points3D, ends) {
-#	ncomp <- length(ends) + 1
-#	repeat { 
-#		extends <- c(0, ends, nrow(points3D))
-#		npoints <- nrow(points3D)
-#		npoints.in <- npoints
-#		component <- 1 
-#		while (component <= ncomp){
-#			perm <- c(3, 1, 2, 3)
-#			points3D.comp <- points3D[(extends[component] + 1) : extends[component + 1], ]
-#			npoints.comp <- nrow(points3D.comp)
-#			while (max(perm) <= npoints.comp) 
-#			{
-#				triangle <- points3D.comp[perm, ]
-#				intersections <- c()
-#				segments <- segmentSet(component, perm[2], extends)
-#				for (i in segments) { 
-#					segment <- rbind(points3D[i, ], points3D[i + 1, ])
-#					intersections <- unique(c(intersections, triangleIntersection(triangle, 
-#											segment)) )
-#				}
-#				if (length(intersect(unique(intersections), TRUE)) != 0) {
-#					perm <- perm + 1
-#					next
-#				}
-#				total <- unique( intersections )
-#				if (identical(total, FALSE) | identical(total, c())) 
-#					points3D <- points3D[-(extends[component]+perm[3]), ]
-#				perm <- perm + 1
-#				npoints <- nrow(points3D)
-#				npoints.comp <- npoints.comp - 1
-#				extends[(component + 1) : length(extends)] <- extends[(component + 1) : length(extends)] - 1
-#				ends <- extends[-c(1, length(extends))]
-#				points3D.comp <- points3D[(extends[component] + 1) : extends[component + 1],]
-#				npoints.comp <- nrow(points3D.comp)
-#			}
-#			component <- component+1
-#		}
-#		if (npoints == npoints.in) 
-#			break
-#	}
-#	return(list(points3D = points3D, ends = extends[-c(1, length(extends))]))
-#}
-
-
-
 move3D <- function(points3D, ends) {
 	ncomp <- length(ends) + 1
 	repeat { 

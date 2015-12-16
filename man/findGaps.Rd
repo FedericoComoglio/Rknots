@@ -46,7 +46,8 @@ This is a low-level function.
 \examples{
 ## Import a PDB file from the file system
 if(require(bio3d)) {
-	protein <- loadProtein(system.file("extdata/1AJC_chainA.pdb", package="Rknots"), join.gaps = TRUE)
+	fn <- system.file("extdata/1AJC_chainA.pdb", package="Rknots")
+	protein <- loadProtein(fn, join.gaps = TRUE)
 	str(protein)
 	protein.g <- findGaps(protein$A, cutoff = 7)
 	str(protein.g)

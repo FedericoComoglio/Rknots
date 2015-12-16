@@ -1,9 +1,8 @@
 Package: Rknots
 Type: Package
-Title: Topological analysis of knotted 3D structures (e.g. proteins,
-        DNA) with R
+Title: Topological Analysis of Knotted Proteins, Biopolymers and 3D Structures
 Version: 1.3.0
-Date: 2015-13-12
+Date: 2015-12-15
 Depends: R (>= 2.14.0), methods, rgl, rSymPy, bio3d
 Suggests: knitr
 VignetteBuilder: knitr
@@ -11,5 +10,5 @@ Author: Federico Comoglio and Maurizio Rinaldi
 Maintainer: Federico Comoglio <federico.comoglio@gmail.com>
 Description: The Rknots package contains functions for the topological analysis of polymers, with a focus on protein structures.
 License: GPL-2
-LazyLoad: yes
+LazyData: yes
 Packaged: 2013-06-26 20:08:49 UTC; comoglif
