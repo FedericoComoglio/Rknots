@@ -59,12 +59,14 @@ Freyd P, Yetter D, Hoste J, Lickorish WBR, Millett K, et al.
 }
 
 \examples{
+\dontrun{
 knot <- makeExampleKnot(k = TRUE)
 knot <- newKnot(knot)
 
 ##compute the polynomials
 computeInvariant(knot, 'HOMFLY', skein.sign = -1)
 computeInvariant(knot, 'Alexander')
+}
 }
 
 \keyword{invariants}

@@ -61,6 +61,7 @@ This is a low-level function.
 }
 
 \examples{
+\dontrun{
 ##Represent 12 randomly selected link diagrams
 par(mfrow = c(3,4))
 
@@ -68,6 +69,7 @@ for(i in 1 : 12) {
 	link <- makeExampleKnot( k = FALSE )
 	link <- AlexanderBriggs(link$points3D, link$ends)
 	plotDiagram(link$points3D, link$ends, main = i, lwd = 1.5)
+}
 }
 }
 

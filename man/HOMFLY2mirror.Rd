@@ -38,9 +38,11 @@ Maurizio Rinaldi, maurizio.rinaldi@pharm.unipmn.it
 }
 
 \examples{
+\dontrun{
 ##convert the right-handed trefoil knot polynomial into the left-handed trefoil polynomial
 HOMFLY.trefoil <- "-1/l**4 + 2/l**2 + m**2/l**2"
 HOMFLY2mirror(HOMFLY.trefoil)
+}
 }
 
 \keyword{utilities}

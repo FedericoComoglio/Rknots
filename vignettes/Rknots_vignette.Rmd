@@ -36,11 +36,10 @@ For example, the Hopf link represented above is defined by an \\(8 \times 3\\) m
 
 Rknots provides two datasets:
 
-1. The Rolfsen table of 250 knots with less than 11 crossings (enumerated according to [Rolfsen](http://www.math.toronto.edu/~drorbn/KAtlas/Knots)). Full and minimal stickies representations are stored in the Rolfsen.table and Rolfsen.table.ms datasets, respectively. To load a dataset, type:
+1. The Rolfsen table of 250 knots with less than 11 crossings (enumerated according to [Rolfsen](http://www.math.toronto.edu/~drorbn/KAtlas/Knots)). Full and minimal stickies representations are stored in the Rolfsen.table and Rolfsen.table.ms datasets, respectively. 
 
 	```{r eval=TRUE}
 	library(Rknots)
-	data(Rolfsen.table)
 	str( head(Rolfsen.table, 5) )
 	head( names(Rolfsen.table) )
 	```
@@ -59,7 +58,6 @@ Rknots provides two datasets:
 2. Coordinates and separators of 130 links up to 4 components, stored in the link.table dataset.
 
 	```{r eval=TRUE}
-	data(link.table)
 	str( head(link.table, 5) )
 	head( names(link.table) )
 	```
@@ -215,7 +213,6 @@ For some applications, the linking number of a link is desired. The linking numb
 An illustration of the very beginning of the Rolfsen knot table can be generated as follows.
 
 ```{r eval=FALSE}
-data(Rolfsen.table)
 text <- names(Rolfsen.table)[1 : 6]
 
 par(mfrow = c(3,2))

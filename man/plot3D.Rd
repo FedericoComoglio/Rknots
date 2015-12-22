@@ -25,6 +25,7 @@ called for its effect.
 }
 
 \examples{
+\dontrun{
 link <- makeExampleKnot(k = FALSE)
 link <- newKnot(link$points3D, link$ends)
 
@@ -33,6 +34,7 @@ require(rgl)
 plot3D(link)
 plot3D(link, radius = 0.1)
 plot3D(link, radius = 0.1, lwd = 10)
+}
 }
 
 \keyword{graphics}

@@ -37,6 +37,7 @@ This is a low-level function.
 }
 
 \examples{
+\dontrun{
 ##3D plot of the Hopf link
 
 hopf <- matrix(c(0.000084, -1.667027, -0.000300,
@@ -60,6 +61,7 @@ plotKnot3D(stevedore, ends = c(), text = FALSE, showNC = FALSE,
 #The same plot, without specifying any parameter for the rgl primitive shapes 
 # (the default sphere radius is 1).
 plotKnot3D(stevedore, ends = c(), text = FALSE)
+}
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

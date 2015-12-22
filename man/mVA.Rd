@@ -54,10 +54,12 @@ This is a low-level function. If you wish to make computations faster, reduce th
 }
 
 \examples{
+\dontrun{
 link <- makeExampleKnot(k = FALSE)
 mVA(points3D = link$points3D, ends = link$ends)
 mVA(points3D = link$points3D, ends = link$ends, normalized = TRUE)
 mVA(points3D = link$points3D, ends = link$ends, normalized = TRUE, return.A = TRUE)
+}
 }
 
 \keyword{invariants}

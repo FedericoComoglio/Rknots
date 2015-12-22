@@ -18,7 +18,7 @@ A list containing a single element, namely a matrix with the 3D coordinates of a
 
 
 \examples{
-if(require(bio3d)) {
+\dontrun{
 makeExampleProtein()
 }
 }

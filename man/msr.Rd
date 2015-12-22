@@ -57,14 +57,14 @@ graphical representations of the reduction process.
 
 
 \examples{
-
+\dontrun{
 knot <- makeExampleKnot()
 reduced <- msr(points3D = knot)
 
 ## 3D plot of both the trefoil and its reduced structure
-require(rgl)
 plotKnot3D(knot, ends = c(), radius = 0.01, lwd = 2.5)
 plotKnot3D(reduced$points3D, reduced$ends, colors = 'red', radius = 0.1, lwd = 2.5)
+}
 }
 
 \keyword{structurereduction}

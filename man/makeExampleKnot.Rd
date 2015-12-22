@@ -25,11 +25,12 @@ makeExampleKnot(k = TRUE)
 }
 
 \examples{
+\dontrun{
 #an example knot
 knot <- makeExampleKnot(k = TRUE)
 
 #an example link
 link <- makeExampleKnot(k = FALSE)
 }
-
+}
 \keyword{utilities}

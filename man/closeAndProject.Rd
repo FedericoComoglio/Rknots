@@ -41,7 +41,7 @@ PLoS Comput Biol 2(5): e45. doi:10.1371/journal.pcbi.0020045
 }
 
 \examples{
-if(require(bio3d)) {
+\dontrun{
 ## Loading from the file system
 fn <- system.file("extdata", "1AJC_chainA.pdb", package="Rknots")
 protein <- loadProtein(fn)

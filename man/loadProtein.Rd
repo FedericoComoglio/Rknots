@@ -65,7 +65,7 @@ See references for additional details and credits.
 
 
 \examples{
-if(require(bio3d)) {
+\dontrun{
 ## Loading from the file system
 fn <- system.file("extdata", "1AJC_chainA.pdb", package="Rknots")
 protein <- loadProtein(fn)
