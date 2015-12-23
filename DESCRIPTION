@@ -8,7 +8,7 @@ Suggests: knitr
 VignetteBuilder: knitr
 Author: Federico Comoglio and Maurizio Rinaldi
 Maintainer: Federico Comoglio <federico.comoglio@gmail.com>
-Description: The Rknots package contains functions for the topological analysis of polymers, with a focus on protein structures.
+Description: The 'Rknots' package contains functions for the topological analysis of polymers, with a focus on protein structures.
 License: GPL-2
 LazyData: yes
 Packaged: 2013-06-26 20:08:49 UTC; comoglif

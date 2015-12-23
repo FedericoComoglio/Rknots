@@ -55,9 +55,11 @@ Maurizio Rinaldi, maurizio.rinaldi@pharm.unipmn.it
 }
 
 \examples{
+\dontrun{
 HOMFLY.trefoil <- "-1/l**4 + 2/l**2 + m**2/l**2"
 HOMFLY2Alexander(HOMFLY.trefoil)
 HOMFLY2Jones(HOMFLY.trefoil)
+}
 }
 
 \keyword{utilities}

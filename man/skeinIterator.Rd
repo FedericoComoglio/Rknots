@@ -46,14 +46,12 @@ Federico Comoglio, federico.comoglio@bsse.ethz.ch
 }
 
 \examples{
-if(require(bio3d)) {
 	protein <- makeExampleProtein()
 	protein <- AlexanderBriggs(protein$A)
 
 	## Compute the skein tree
 	tree <- skeinIterator(protein$points3D, protein$ends)
 	str(tree)
-}
 }
 
 \keyword{invariants}

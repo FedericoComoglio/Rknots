@@ -22,7 +22,7 @@ makeExampleKnot <- function(k = TRUE) {
 }
 
 makeExampleProtein <- function() {
-	fn <- system.file( "extdata", "2k0a.pdb", package = "Rknots")
+	fn <- system.file( "extdata", "2K0A.pdb", package = "Rknots")
 	protein <- loadProtein( fn )
 	return(protein)
 }
