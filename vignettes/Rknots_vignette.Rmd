@@ -238,7 +238,7 @@ In this section, we apply Rknots to detect and characterize knots in proteins. T
 A protein can be loaded from the file system or fetched from the Protein Data Bank  using the loadProtein function, which returns a list of matrices where each element contains the 3D coordinates of a given protein chain. By default, loadProtein performs gap finding for each chain backbone. A cutoff parameter corresponding to the maximum allowed euclidean distance between two consecutive alpha-Carbon residues facilitates a custom definition of a gap. If a distance is greater than cutoff, the chain is split at the corresponding position and subchains are generated. 
 
 ```{r eval=TRUE}
-protein <- loadProtein(system.file("extdata/2k0a.pdb", package="Rknots"))
+protein <- loadProtein(system.file("extdata/2K0A.pdb", package="Rknots"))
 protein<- loadProtein('2K0A') #from the PDB
 str(protein)
 ```
