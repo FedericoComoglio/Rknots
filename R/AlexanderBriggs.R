@@ -32,7 +32,7 @@ triangleIntersection <- function(triangle3D, segment) {
 	v2 <- triangle3D[2, ] - triangle3D[1, ]
 	n <- cross(v1, v2)	
 	t <- (n %*% (segment[1, ] - triangle3D[1, ])) / (n %*% (segment[1, ] - segment[2, ]))
-	P <- segment[1, ] + t * (segment[2, ] - segment[1, ])
+	P <- segment[1, ] + as.vector(t) * (segment[2, ] - segment[1, ])
 	inside <- interiorTriangle(triangle3D[, 1 : 2], P[1 : 2])
 	return(inside)
 } 
